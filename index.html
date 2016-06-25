@@ -10,15 +10,17 @@
 	
 	<link rel="stylesheet" href="Libraries/bootstrap-3.3.6-dist/css/bootstrap.min.css" >
 
-	<!-- Open sans font -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+	<!-- Open sans and Lato font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:700" rel="stylesheet">
+
 	<!-- green used #1FDA9A. off-white used #F2F2F3 -->
 	<style type="text/css">
 		
 		body{
 			background-color: #F2F2F3;
+			font-family: 'Lato', sans-serif;
 		}
-		
+
 		.coverImage{
 			border-radius: 50%;
 			padding-top: 60px;
@@ -26,8 +28,8 @@
 		}
 		.colored{
 			background-color: #1FDA9A
-		}
 
+		}
 
 
 		.titleWhite{
@@ -35,9 +37,20 @@
 			color: #F2F2F3;
 		}
 
+		.titleBlack{
+			font-family: 'Open Sans', sans-serif;
+			color: black;
+		}
+
+
 		.center{
 			text-align: center;
 
+		}
+
+		.bodyText{
+			text-align: left;
+			font-family: 'Lato', sans-serif;
 		}
 
 		#downGlyphicon{
@@ -48,6 +61,7 @@
 		#downGlyphicon:hover{
 			color: #46FA67;
 		}
+
 
 
 		}
@@ -80,7 +94,8 @@
 </nav>
 
 <!-- Header section -->
-<section class="colored">
+<div class="colored">
+
 	<center><img src="Photos/CoverPhotoFace.jpeg" class="img-rounded img-responsive coverImage" ></center>
 
 	<div class="titleWhite">
@@ -91,11 +106,28 @@
 	<div class="center">
 	<a><span class="glyphicon glyphicon-chevron-down" id="downGlyphicon"></span></a>
 	</div>
-</section>
 
-<section class="offWhite">
+</div>
 
-</section>
+<!-- About me section -->
+<div id="about" class="offWhite">
+	<h2 class="center titleBlack"> About Me</h2>
+	<div class="containter">
+		<div class="row" >
+		<div class="col-lg-3 col-md-3 col-sm-2"></div>
+		<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 center">
+		<p class="bodyText">
+			From a young age I have always loved interacting with computer hardware and software, which made the decision to pursue a career in software development an easy one. I have graduated from the University of Alberta with a BSc in Computer Engineering and as I progressed through my studies I began to realize my passion for software development. This caused me to focus on developing my software developer skillset by using nearly all my electives to take interesting and challenging courses in order to increase my abilities as a developer. On top of this, I have spent numerous hours over the years on personal projects that allowed me to use the skills I have acquired in innovative ways.
+		</p>
+		<p class="bodyText">	
+			The strongest portion of my skillset is definitely my object-oriented design skills, as Java was the first language I worked with extensively and I have spent countless hours researching aspects of OOD such as design patterns. However, the most important trait I possess, in my opinion, is that I love to learn. This trait has caused me to always be fiddling with some new technology that I have picked up. Whether it be solving coding problems with Python, creating Android applications, designing and implementing websites with HTML/CSS, or even just messing around with different JavaScript libraries, I always love to apply the new skills that I learn. Even things like functional programing with Lisp or constraint logic programing with Prolog are tools I love to work with as they allow me to think in different ways. In summary, learning and evolving as a software developer is an important part of my life and as I go forward in my career I know my thirst for knowledge will never wane because developing software is just too much fun.
+		</p>
+		</div> 
+		<div class="col-lg-3 col-md-3 col-sm-2"></div>
+		</div>
+	</div>
+</div>
+
 
 <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 <script src="Libraries/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
