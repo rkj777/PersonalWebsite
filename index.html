@@ -19,6 +19,7 @@
 		body{
 			background-color: #F2F2F3;
 			font-family: 'Lato', sans-serif;
+		
 		}
 
 		.coverImage{
@@ -27,8 +28,8 @@
 
 		}
 		.colored{
-			background-color: #1FDA9A
-
+			background-color: #1FDA9A;
+			
 		}
 
 
@@ -74,6 +75,67 @@
  			top:25px;
 		}
 
+		.video-container {
+    	position: relative;
+    	padding-bottom: 56.25%;
+    	padding-top: 30px; height: 0; overflow: hidden;
+		}
+ 
+		.video-container iframe,
+		.video-container object,
+		.video-container embed {
+			position: absolute;
+		 	top: 0;
+		 	left: 0;
+		 	width: 100%;
+			height: 100%;
+		}
+
+		.btn-colored { 
+		  color: #F2F2F3; 
+		  background-color: #1FDA9A; 
+		  border-color: #16C487; 
+		} 
+ 
+		.btn-colored:hover, 
+		.btn-colored:focus, 
+		.btn-colored:active, 
+		.btn-colored.active, 
+		.open .dropdown-toggle.btn-colored { 
+		  color: #F2F2F3; 
+		  background-color: #00C27E; 
+		  border-color: #16C487; 
+		} 
+		 
+		.btn-colored:active, 
+		.btn-colored.active, 
+		.open .dropdown-toggle.btn-colored { 
+		  background-image: none; 
+		} 
+		 
+		.btn-colored.disabled, 
+		.btn-colored[disabled], 
+		fieldset[disabled] .btn-colored, 
+		.btn-colored.disabled:hover, 
+		.btn-colored[disabled]:hover, 
+		fieldset[disabled] .btn-colored:hover, 
+		.btn-colored.disabled:focus, 
+		.btn-colored[disabled]:focus, 
+		fieldset[disabled] .btn-colored:focus, 
+		.btn-colored.disabled:active, 
+		.btn-colored[disabled]:active, 
+		fieldset[disabled] .btn-colored:active, 
+		.btn-colored.disabled.active, 
+		.btn-colored[disabled].active, 
+		fieldset[disabled] .btn-colored.active { 
+		  background-color: #1FDA9A; 
+		  border-color: #16C487; 
+		} 
+		 
+		.btn-colored .badge { 
+		  color: #1FDA9A; 
+		  background-color: #F2F2F3; 
+		}
 
 	</style>	
 
@@ -147,11 +209,28 @@
         <h4 class="modal-title titleBlack" id="myModalLabel"> Gesture Control Interface Glove</h4>
       </div>
       <div class="modal-body">
-      	
+      	For the final capstone project of my Computer Engineering degree, me and two colleagues created a gesture control interface glove. This glove allowed a user to execute keyboard shortcuts on a windows computer with hand gestures. Specifically, alt-tab/alt-shift-tab were implemented to switch tabs and page up a page down were implemented to scroll through documents. This project involved many aspects of Computer Engineering and the portions of the project I developed included:
+      	<ul>
+      	<li>Circuit design and implementation </li>
+      	<li>Microcontroller and embedded systems programming, specifically programing the ATmega328p located on the glove</li>
+      	<li>FPGA programming, specifically programming the Altera DE2 </li>
+      	<li>Programming the gesture recognition algorithm used the to determine the gesture the user invoked</li>
+      	</ul>
+      	<br>
+      	<img src="Photos/LabeledGlove.png" class="img-responsive centered">
+      	<br>
+      	<h4 class="modal-title titleBlack" id="myModalLabel">Video Demonstration</h4>
+      	<div class="video-container">
+         <iframe src="https://www.youtube.com/embed/HFpMwudaUh8" frameborder="0" width="560" height="315"></iframe>
+				</div>
+
       </div>
+
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <a type="button" class="btn btn-colored" href="Docs/CapstoneFinalReport.pdf" target=_blank> <span class="glyphicon glyphicon-download-alt" style="font-size:0.9em"></span> Download Project Paper</a>
+      <a type="button" class="btn btn-colored" href="https://github.com/rkj777/GestureConrolInterface" target=_blank>View on GitHub</a>
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
       </div>
     </div>
   </div>
@@ -164,10 +243,10 @@
 	<h2 class="center titleWhite">Portfolio</h2>
 
   <!-- Wrapper for slides -->
-
-  <div class="carousel-inner" role="listbox">
+	<div class="carousel-inner" role="listbox">
 
     <div class="item active">
+    	<h3 class="center titleWhite">Gesture Control Interface Glove</h3>
      	<img src="Photos/GloveModualImageT.png" class="img-responsive portfolioPicture" data-toggle="modal" data-target="#gloveModual"> 
 
 	
