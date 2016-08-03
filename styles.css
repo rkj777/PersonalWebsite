@@ -1,0 +1,130 @@
+body{
+	background-color: #F2F2F3;
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden
+
+}
+.coverImage{
+	border-radius: 50%;
+	padding-top: 60px;
+
+}
+.colored{
+	background-color: #1FDA9A;
+	
+}
+
+
+.titleWhite{
+	font-family: 'Open Sans', sans-serif;
+	color: #F2F2F3;
+}
+
+.titleBlack{
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+}
+
+
+.center{
+	text-align: center;
+
+}
+
+.imgCenter{
+	margin:0 auto;
+}
+.bodyText{
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+}
+
+#additionProjectsHeader{
+	padding-top:80px;
+	padding-bottom:60px;
+}
+
+#downGlyphicon{
+	font-size:200%;
+	color: #F2F2F3;
+}
+
+#downGlyphicon:hover{
+	color: #46FA67;
+}
+
+.portfolioPicture{
+	margin:auto;
+	max-height:300px; 
+}
+
+
+.carousel-indicators {
+	position: relative;
+		top:25px;
+}
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+	height: 100%;
+}
+
+.btn-colored { 
+  color: #F2F2F3; 
+  background-color: #1FDA9A; 
+  border-color: #16C487; 
+} 
+
+.btn-colored:hover, 
+.btn-colored:focus, 
+.btn-colored:active, 
+.btn-colored.active, 
+.open .dropdown-toggle.btn-colored { 
+  color: #F2F2F3; 
+  background-color: #00C27E; 
+  border-color: #16C487; 
+} 
+ 
+.btn-colored:active, 
+.btn-colored.active, 
+.open .dropdown-toggle.btn-colored { 
+  background-image: none; 
+} 
+ 
+.btn-colored.disabled, 
+.btn-colored[disabled], 
+fieldset[disabled] .btn-colored, 
+.btn-colored.disabled:hover, 
+.btn-colored[disabled]:hover, 
+fieldset[disabled] .btn-colored:hover, 
+.btn-colored.disabled:focus, 
+.btn-colored[disabled]:focus, 
+fieldset[disabled] .btn-colored:focus, 
+.btn-colored.disabled:active, 
+.btn-colored[disabled]:active, 
+fieldset[disabled] .btn-colored:active, 
+.btn-colored.disabled.active, 
+.btn-colored[disabled].active, 
+fieldset[disabled] .btn-colored.active { 
+  background-color: #1FDA9A; 
+  border-color: #16C487; 
+} 
+ 
+.btn-colored .badge { 
+  color: #1FDA9A; 
+  background-color: #F2F2F3; 
+}
