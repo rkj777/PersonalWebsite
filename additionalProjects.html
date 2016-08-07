@@ -74,13 +74,34 @@
   </div>
 </div>
 
+<!-- Tile Coder Modal -->
+<div class="modal fade" id="tileCodingModal" tabindex="-1" role="dialog" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title titleBlack" id="myModalLabel">Tile Coding</h4>
+      </div>
+      <div class="modal-body blackBodyText">
+      	 <p>Using a combination of tile coding and <a class="modalLink" target="_blank" href="https://en.wikipedia.org/wiki/Supervised_learning">supervised learning</a> by gradient descent, I was able to implement a program that was able to approximate a function based on training data.</p>
+      </div>
+
+      <div class="modal-footer">
+      <a type="button" class="btn btn-colored" href="https://github.com/rkj777/TileCodingFunctionApproximation" target=_blank>View on GitHub</a>
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container" style="width:100%;background-color:#1FDA9A;" >
 
 	<div id="gt-grid" class="gt-grid">
 			
 				<div data-toggle="modal" data-target="#routeFinderModal"><h4>Dijkstra’s Algorithm Route Finder</h4></div>
-				<div><h3>lettuce water</h3></div>
-				<div><h3>turnip maize</h3></div>
+				<div data-toggle="modal" data-target="#tileCodingModal"><h4>Tile Coding</h4></div>
+				<div data-toggle="modal" data-target="#tileCodingModal"><h4>Mountain Car Problem</h4></div>
 				<div class="special"><h3><a class="current-demo" href="index.html">Demo 1: No transitions</a></h3></div>
 				<div class="special"><h3><a href="index2.html">Demo 2: Grid transitions</a></h3></div>
 				<div class="special"><h3><a href="index3.html">Demo 3: Delayed transitions</a></h3></div>
