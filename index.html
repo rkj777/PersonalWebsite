@@ -53,13 +53,13 @@
 		</div>
 		
 		<div class="center">
-		<a><span class="glyphicon glyphicon-chevron-down" id="downGlyphicon" style="font-size:300%"></span></a>
+		<a href="#about"><span class="glyphicon glyphicon-chevron-down" id="downGlyphicon" style="font-size:300%"></span></a>
 		</div>
 	</div>
 </div>
 
 <!-- About me section -->
-<div id="about" class="offWhite" >
+<div id="about" class="offWhite" style="padding-bottom:50px" >
 	<h2 class="center titleBlack"> About Me</h2>
 	<div class="containter">
 		<div class="row" >
@@ -389,5 +389,23 @@
 
 <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 <script src="Libraries/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+	//Source:http://stackoverflow.com/questions/19127212/smooth-scroll-with-navbar-fixed-top
+	$(document).ready(function () {
+     $('a[href^="#"]').on('click', function (e) {
+         e.preventDefault();
+
+         var target = this.hash,
+             $target = $(target);
+
+         $('html, body').stop().animate({
+             'scrollTop': $target.offset().top - 80
+         }, 900, 'swing', function () {
+             window.location.hash = target;
+         });
+     });
+ });
+</script>
 </body>
 </html>  	
