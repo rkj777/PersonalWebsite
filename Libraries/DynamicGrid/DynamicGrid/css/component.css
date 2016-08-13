@@ -13,7 +13,6 @@
 .gt-grid {
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
 	position: relative;
 	-webkit-backface-visibility: hidden;
 }

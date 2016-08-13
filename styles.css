@@ -144,3 +144,7 @@ fieldset[disabled] .btn-colored.active {
   color: #1FDA9A; 
   background-color: #F2F2F3; 
 }
+
+.smSelectionBoxes > div{
+	width: 100%;
+}
