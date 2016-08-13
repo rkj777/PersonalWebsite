@@ -18,7 +18,7 @@
 
 </head>
 	
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-- navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -33,8 +33,8 @@
     </div>
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="nav navbar-nav navbar-right">
-      	<li class="active"><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
+      	<li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
@@ -42,23 +42,24 @@
 </nav>
 
 <!-- Header section -->
-<div class="colored">
+<div class="colored" style="height:100vh">
+	<div class="verticalCenter">
+		<center><img src="Photos/CoverPhotoFace.jpeg" class="img-rounded img-responsive coverImage" ></center>
 
-	<center><img src="Photos/CoverPhotoFace.jpeg" class="img-rounded img-responsive coverImage" ></center>
-
-	<div class="titleWhite">
-	<h1 class="center" style="margin-bottom:5px">Rajan Jassal</h1>
-	<h2 class="center" style="margin-top:5px">Computer Engineer</h2>
+		<div class="titleWhite">
+		<h1 class="center" style="margin-bottom:5px;font-size:500%">Rajan Jassal</h1>
+		<h2 class="center" style="margin-top:5px;font-size:400%">Computer Engineer</h2>
+		<br>
+		</div>
+		
+		<div class="center">
+		<a><span class="glyphicon glyphicon-chevron-down" id="downGlyphicon" style="font-size:300%"></span></a>
+		</div>
 	</div>
-	
-	<div class="center">
-	<a><span class="glyphicon glyphicon-chevron-down" id="downGlyphicon"></span></a>
-	</div>
-
 </div>
 
 <!-- About me section -->
-<div id="about" class="offWhite">
+<div id="about" class="offWhite" >
 	<h2 class="center titleBlack"> About Me</h2>
 	<div class="containter">
 		<div class="row" >
@@ -243,7 +244,7 @@
 </div>
 
 <!-- Portfolio section for big screens -->
-<div class="colored" style="padding-bottom:25px">
+<div id="portfolio" class="colored" style="padding-bottom:25px">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
 	<h2 class="center titleWhite">Portfolio</h2>
