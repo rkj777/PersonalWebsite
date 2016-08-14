@@ -202,6 +202,18 @@ fieldset[disabled] .btn-colored.active {
 }
 
 
-
+@media only screen 
+and (min-device-width : 600px){
+	#header{
+		height:100vh;
+	}
+} 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 600px) {
+	#header{
+		padding-top: 400px; 
+	}
+}
 
 
