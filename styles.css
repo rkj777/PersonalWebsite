@@ -80,13 +80,13 @@ body{
 
 .carousel-indicators {
 	position: relative;
-		top:25px;
+	top:25px;
 }
 
 .video-container {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px; height: 0; overflow: hidden;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px; height: 0; overflow: hidden;
 }
 
 .video-container iframe,
@@ -155,9 +155,35 @@ fieldset[disabled] .btn-colored.active {
 	width: 25%;
 }
 
-.verticalCenter {
+.verticalCenter{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
+.socialText{
+	position: relative;
+}
+
+.socialCenter{
+	display: inline-block;
+}
+
+.socialItem{
+	display: inline-block;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.socialLink{
+	color: black;
+}
+
+.socialLink:hover{
+	color: #1FDA9A;
+}
+
+.socialLink:active,
+.socialLink:focus{
+	color: #00C27E
+}
