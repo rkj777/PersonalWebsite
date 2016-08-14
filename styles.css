@@ -78,6 +78,7 @@ body{
 }
 
 
+
 .carousel-indicators {
 	position: relative;
 	top:25px;
@@ -187,3 +188,20 @@ fieldset[disabled] .btn-colored.active {
 .socialLink:focus{
 	color: #00C27E
 }
+
+.overlay{
+   	position: absolute;
+    top: 50%;
+    margin-top: -10px; 
+    left: 50%;
+    margin-left: -10px; 
+    z-index: 2;
+    color: #FFF;
+    display: none;
+    font-size:300%;	
+}
+
+
+
+
+
