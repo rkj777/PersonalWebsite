@@ -520,7 +520,7 @@
 <!-- source: https://github.com/codrops/DynamicGrid -->
 <div class="gt-grid hidden-sm hidden-xs" style="background-color:#1FDA9A;color:#F2F2F3">
 		
-			<div data-toggle="modal" data-target="#routeFinderModal"><h4>Dijkstra’s Algorithm Route Finder</h4></div>
+			<div data-toggle="modal" data-target="#routeFinderModal" id="routeFinderPannel"><h4>Dijkstra’s Algorithm Route Finder</h4></div>
 			<div data-toggle="modal" data-target="#tileCodingModal"><h4>Tile Coding</h4></div>
 			<div data-toggle="modal" data-target="#mountainCarModal"><h4>Mountain Car Problem</h4></div>
 			<div data-toggle="modal" data-target="#blockCipherModal"><h4>Feistel Block Cipher</h4></div>
@@ -546,7 +546,7 @@
 
 <!-- sm Small screen boxes"-->
 <div class="gt-grid hidden-xs hidden-md hidden-lg smSelectionBoxes" style="background-color:#1FDA9A;color:#F2F2F3;overflow:visible">
-				<div data-toggle="modal" data-target="#routeFinderModal"><h4>Dijkstra’s Algorithm Route Finder</h4></div>
+				<div data-toggle="modal" data-target="#routeFinderModal" ><h4>Dijkstra’s Algorithm Route Finder</h4></div>
 				<div data-toggle="modal" data-target="#tileCodingModal"><h4>Tile Coding</h4></div>
 				<div data-toggle="modal" data-target="#mountainCarModal"><h4>Mountain Car Problem</h4></div>
 				<div data-toggle="modal" data-target="#blockCipherModal"><h4>Feistel Block Cipher</h4></div>
@@ -605,6 +605,16 @@
 <script src="Libraries/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 <script>
 	Grid.init();
+</script>
+
+<script type="text/javascript">
+	$("#routeFinderPannel").click(
+		function(){
+		var tap = ("ontouchstart" in document.documentElement);
+		if(tap){
+		$("#routeFinderModal").modal('show');
+		}
+	});
 </script>
 </body>
 </html>
