@@ -214,7 +214,10 @@ and (min-device-width : 600px){
 		position: relative;
 		top:25px;
 	}
-} 
+
+	
+}
+
 @media only screen 
 and (max-device-width : 600px) {
 	#header{
@@ -226,6 +229,8 @@ and (max-device-width : 600px) {
 		min-height:350px
 		max-height:350px;
 	}
-
+	.smSocialText{
+		font-size: 70%
+	}
 }
 
