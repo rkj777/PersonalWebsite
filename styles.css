@@ -234,3 +234,10 @@ and (max-device-width : 600px) {
 	}
 }
 
+@media only screen 
+and (max-device-width : 350px) {
+	.smSocialText{
+		font-size: 50%
+	}
+}
+
