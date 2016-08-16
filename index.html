@@ -275,34 +275,43 @@
     <div class="item active">
 
     	<h3 class="center titleWhite">Gesture Control Interface Glove</h3>
-     	<img src="Photos/GloveModualImage.png" class="img-responsive portfolioPicture" data-toggle="modal" data-target="#gloveModual"> 
-     	<span class="glyphicon glyphicon-search overlay"></span>
-     
+    	
+    	<div class="pictureWrapper" data-toggle="modal" data-target="#gloveModual">
+     		<img src="Photos/GloveModualImage.png" class="img-responsive portfolioPicture" > 
+     		<span class="glyphicon glyphicon-search overlay" ></span>
+     	</div>
     </div>
 
     <div class="item">
    		<h3 class="center titleWhite">Shiny Expense Tracker</h3>
-     	<img src="Photos/androidModal.png" class="img-responsive portfolioPicture" data-toggle="modal" data-target="#androidModual"> 
-     	<span class="glyphicon glyphicon-search overlay"></span>
-     
+    	<div class="pictureWrapper" data-toggle="modal" data-target="#androidModual">
+	     	<img src="Photos/androidModal.png" class="img-responsive portfolioPicture" > 
+	     	<span class="glyphicon glyphicon-search overlay"></span>
+     	</div>
     </div>
 
     <div class="item">
     	<h3 class="center titleWhite">Ocean Observer System</h3>
-      <img src="Photos/DatabaseModalCover.png"  class="img-responsive portfolioPicture" data-toggle="modal" data-target="#databaseApplicationModual">
-      <span class="glyphicon glyphicon-search overlay"></span>
+    	<div class="pictureWrapper" data-toggle="modal" data-target="#databaseApplicationModual">
+	      <img src="Photos/DatabaseModalCover.png"  class="img-responsive portfolioPicture" >
+	      <span class="glyphicon glyphicon-search overlay"></span>
+      </div>
     </div>
 
     <div class="item">
     	<h3 class="center titleWhite">Code Runner</h3>
-      <img src="Photos/CodeRunnerModalCover.png" class="img-responsive portfolioPicture" data-toggle="modal" data-target="#codeRunnerModual" >
-      <span class="glyphicon glyphicon-search overlay"></span>
+    	<div class="pictureWrapper" data-toggle="modal" data-target="#codeRunnerModual" >
+	      <img src="Photos/CodeRunnerModalCover.png" class="img-responsive portfolioPicture" >
+	      <span class="glyphicon glyphicon-search overlay"></span>
+      </div>
     </div>
 
     <div class="item">
     	<h3 class="center titleWhite">Bunny Hunter Simulator 2014</h3>
-      <img src="Photos/bunnyHunterModalCover.png" class="img-responsive portfolioPicture" data-toggle="modal" data-target="#bunnyHunterModual" >
-      <span class="glyphicon glyphicon-search overlay"></span>
+    	<div class="pictureWrapper" data-toggle="modal" data-target="#bunnyHunterModual" >
+	      <img src="Photos/bunnyHunterModalCover.png" class="img-responsive portfolioPicture" >
+	      <span class="glyphicon glyphicon-search overlay"></span>
+      </div>
     </div>
 
   </div>
@@ -438,30 +447,21 @@
 
 <script type="text/javascript">
 	//Handling the portfolio picture hovering
-	$(".portfolioPicture").mouseenter(
+	$(".pictureWrapper").hover(
 		function(){
-			$(".overlay").show();
-			$(".portfolioPicture").css("opacity", "0.6");
-		});
-
-	$(".portfolioPicture").mouseleave(
+			//Check to see if 
+			var tap = ("ontouchstart" in document.documentElement);
+			if(!tap){
+				$(".overlay").show();
+				$(".portfolioPicture").css("opacity", "0.6");
+			}
+		},
 		function(){
-			
-			$(".overlay").hide();
-			$(".portfolioPicture").css("opacity", "1");
-		});
-
-	$(".overlay").mouseenter(
-		function(){
-			$(".overlay").show();
-			$(".portfolioPicture").css("opacity", "0.6");
-
-		});
-
-	$(".overlay").mouseleave(
-		function(){
-			$(".portfolioPicture").css("opacity", "0.6");
-						
+			var tap = ("ontouchstart" in document.documentElement);
+			if(!tap){
+				$(".overlay").hide();
+				$(".portfolioPicture").css("opacity", "1");
+			}
 		});
 
 </script>
