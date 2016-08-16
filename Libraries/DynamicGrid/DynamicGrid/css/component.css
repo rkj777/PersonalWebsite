@@ -28,7 +28,7 @@
 }
 
 @media only screen 
-and (max-device-width : 600px){
+and (min-device-width : 600px){
 .gt-grid > div:hover:before,
 	.gt-grid > div.special:before {
 		content: '';
@@ -44,6 +44,7 @@ and (max-device-width : 600px){
 		background: rgba(0,0,0,0.05);
 	}
 }
+
 
 .gt-grid > div.gt-hidden {
 	opacity: 0;
