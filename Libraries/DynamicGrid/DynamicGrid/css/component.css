@@ -27,19 +27,22 @@
 	box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
 }
 
+@media only screen 
+and (max-device-width : 600px){
 .gt-grid > div:hover:before,
-.gt-grid > div.special:before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.03);
-}
+	.gt-grid > div.special:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,0.03);
+	}
 
-.gt-grid > div:hover:before {
-	background: rgba(0,0,0,0.05);
+	.gt-grid > div:hover:before {
+		background: rgba(0,0,0,0.05);
+	}
 }
 
 .gt-grid > div.gt-hidden {
