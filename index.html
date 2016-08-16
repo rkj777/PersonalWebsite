@@ -273,7 +273,7 @@
 	<div class="carousel-inner" role="listbox">
 
     <div class="item active">
-    	
+
     	<h3 class="center titleWhite">Gesture Control Interface Glove</h3>
      	<img src="Photos/GloveModualImage.png" class="img-responsive portfolioPicture" data-toggle="modal" data-target="#gloveModual"> 
      	<span class="glyphicon glyphicon-search overlay"></span>
@@ -438,23 +438,27 @@
 
 <script type="text/javascript">
 	//Handling the portfolio picture hovering
-	$(".portfolioPicture").hover(
+	$(".portfolioPicture").mouseenter(
 		function(){
 			$(".overlay").show();
 			$(".portfolioPicture").css("opacity", "0.6");
-		},
+		});
+
+	$(".portfolioPicture").mouseleave(
 		function(){
 			
 			$(".overlay").hide();
 			$(".portfolioPicture").css("opacity", "1");
 		});
 
-	$(".overlay").hover(
+	$(".overlay").mouseenter(
 		function(){
 			$(".overlay").show();
 			$(".portfolioPicture").css("opacity", "0.6");
 
-		},
+		});
+
+	$(".overlay").mouseleave(
 		function(){
 			$(".portfolioPicture").css("opacity", "0.6");
 						
