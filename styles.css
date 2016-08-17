@@ -241,3 +241,6 @@ and (max-device-width : 350px) {
 	}
 }
 
+.gt-grid > div:hover{
+	background: rgba(0,0,0,0.05);
+}
