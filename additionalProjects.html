@@ -632,6 +632,16 @@
 		},
 		function(){});
 
+	$(".mountainPanel").hover(
+		function(){
+			//Check to see if 
+			var tap = ("ontouchstart" in document.documentElement);
+			if(tap){
+				$("#mountainCarModal").modal('show');
+			}
+		},
+		function(){});
+
 </script>
 </body>
 </html>
