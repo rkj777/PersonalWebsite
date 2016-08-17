@@ -30,6 +30,7 @@ body{
 .titleGreen{
 	font-family: 'Open Sans', sans-serif;
 	color: #1FDA9A;
+	font-size: 300%;
 }
 
 .modalLink{
@@ -215,6 +216,11 @@ and (min-device-width : 600px){
 		top:25px;
 	}
 
+	.titleGreen{
+		font-family: 'Open Sans', sans-serif;
+		color: #1FDA9A;
+		font-size: 400%;
+	}
 	
 }
 
